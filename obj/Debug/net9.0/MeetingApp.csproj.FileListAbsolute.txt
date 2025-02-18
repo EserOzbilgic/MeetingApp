@@ -27,3 +27,5 @@ C:\Users\eserg\Desktop\meetingapp\MeetingApp\obj\Debug\net9.0\refint\MeetingApp.
 C:\Users\eserg\Desktop\meetingapp\MeetingApp\obj\Debug\net9.0\MeetingApp.pdb
 C:\Users\eserg\Desktop\meetingapp\MeetingApp\obj\Debug\net9.0\MeetingApp.genruntimeconfig.cache
 C:\Users\eserg\Desktop\meetingapp\MeetingApp\obj\Debug\net9.0\ref\MeetingApp.dll
+C:\Users\eserg\Desktop\meetingapp\MeetingApp\obj\Debug\net9.0\MeetingApp.RazorAssemblyInfo.cache
+C:\Users\eserg\Desktop\meetingapp\MeetingApp\obj\Debug\net9.0\MeetingApp.RazorAssemblyInfo.cs
