@@ -1,7 +1,15 @@
+@model MeetingInfo
 @{
     ViewBag.Title = "Apply for Meeting";
     Layout = "_Layout2";
 }
 <h1 class="h4">@ViewData["greeting"], @ViewData["UserName"]!</h1>
 <p>Welcome to the Meeting App!</p>
+<div class="card my-2">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">@Model.Location</li>
+        <li class="list-group-item">@Model.Date.ToString("dd/MM/yyyy hh:mm:ss") will be the meeting time.</li>
+        <li class="list-group-item">@Model.NumberOfParticipants Participants</li>
+    </ul>
+</div>
 <a class = "btn btn-sm btn-outline-primary" asp-controller="Meeting" asp-action="Apply">Apply for a Meeting</a>

@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using MeetingApp.Models;
+using System.Security.Cryptography.X509Certificates;
 
 namespace MeetingApp.Controllers
 {
@@ -12,7 +14,17 @@ namespace MeetingApp.Controllers
 
             ViewData["greeting"] = time > 12 ? "Good Afternoon" : "Good Morning";
             ViewData["UserName"] = "John";
-            return View();
+
+
+            var meetingInfo = new MeetingInfo()
+            {
+                Id = 1,
+                Location = "Paris, Congress Center",
+                Date = new DateTime(2026, 11, 23, 11, 0, 0),
+                NumberOfParticipants = 250
+            };
+
+            return View(meetingInfo);
         }
     }
 }
