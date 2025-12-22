@@ -1,3 +1,4 @@
+@model UserInfo
 @{
     ViewBag.Title = "Apply Form";
 }
@@ -5,12 +6,12 @@
 <h1 class="h4 text-center">Meeting Application Form</h1>
 <form method="post" action="/meeting/Apply">
     <div class="mb-3">
-        <label for="Name" class="form-label">Name Surname</label>
-        <input type="text" name="Name" id="Name" class="form-control"/>
+        <label asp-for="Name" class="form-label">Name Surname</label>
+        <input asp-for="Name" class="form-control"/>
 
     </div>
     <div class="mb-3">
-    <label class="form-label">Phone</label>
+    <label asp-for="Phone" class="form-label">Phone</label>
 
     <div class="input-group">
         <select class="form-select"
@@ -91,12 +92,12 @@
 
 
      <div class="mb-3">
-        <label for="Email" class="form-label">Email</label>
-        <input type="text" name="Email" id="Email" class="form-control"/>
+        <label asp-for="Email" class="form-label">Email</label>
+        <input asp-for="Email" class="form-control"/>
     </div>
      <div class="mb-3">
-        <label for="WillAttend" class="form-label">Participation Status</label>
-        <select name="WillAttend" id="WillAttend" class="form-select">
+        <label asp-for="WillAttend" class="form-label">Participation Status</label>
+        <select asp-for="WillAttend" class="form-select">
             <option value="true">Yes I will attend</option>
             <option value="false">No I won't attend</option>
         </select>
