@@ -8,7 +8,7 @@
 @if (Model.WillAttend == true)
 {
     <p>Thank you @Model.Name! with you there are @ViewBag.UserCount participants in total.</p>
-    <a class="btn btn-sm btn-outline-primary" href="#">View Participants</a>
+    <a class="btn btn-sm btn-outline-primary" href="/meeting/list">View Participants</a>
 }
 else
 {

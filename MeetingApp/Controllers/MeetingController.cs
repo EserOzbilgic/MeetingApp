@@ -23,7 +23,13 @@ namespace MeetingApp.Controllers
         [HttpGet]
         public IActionResult List()
         {
-            return View();
+
+            return View(Repository.Users);
+        }
+
+        public IActionResult Details(int id)
+        {
+            return View(Repository.GetById(id));
         }
     }
 }
