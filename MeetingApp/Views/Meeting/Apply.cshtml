@@ -3,7 +3,7 @@
 }
 
 <h1 class="h4 text-center">Meeting Application Form</h1>
-<form action="">
+<form method="post" action="/meeting/Apply">
     <div class="mb-3">
         <label for="Name" class="form-label">Name Surname</label>
         <input type="text" name="Name" id="Name" class="form-control"/>
@@ -116,14 +116,11 @@ const placeholders = {
     "+966": "5x xxx xxxx",
     "+971": "5x xxx xxxx"
 };
-
-
-
     function updatePlaceholder() {
         const code = document.getElementById("countryCode").value;
         document.getElementById("Phone").placeholder =
             placeholders[code] || "Phone number";
-    }
+    }   
 
     function showPhoneSpinner() {
         const spinner = document.getElementById("phoneSpinner");
